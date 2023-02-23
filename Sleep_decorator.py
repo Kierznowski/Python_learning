@@ -1,4 +1,5 @@
 #Sleep decorator
+#gdy np dana funkcja musi się odświeżyć co jakiś określony czas
 
 import functools
 import time
