@@ -5,7 +5,7 @@ try:
         
 except FileNotFoundError:
     print("Sorry this file doesn't exist.")
-except Exception:                       #na końcu jak najpierw sprawdzi błędy powyżej
+except Exception:                       #na końcu, najpierw sprawdzi błędy powyżej
     print("Sorry. Something went wrong.")
 else:                                   #wykona się jak wszystko jest ok
     print(f.read())
