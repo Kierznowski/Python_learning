@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Magic ball</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="{% static 'magic/style.css' %}" type="text/css">
+        <link rel="icon" type="image/png" href="{% static 'magic/images/icon.png' %}">
+    </head>
+
+    <body>
+        <div id="container">
+            <div class="menu">
+                <div class="button"><button class="button-54" role="button" onClick="window.location.reload();">Shake me!</button></div>
+                <div class="button-unfold"><button class="button-54">How I work?</button></div>
+                <div class="how">
+                    Just ask yourself yes-no question in your mind and click on "Shake me!". Wish you luck!
+                </div>
+                <div class="button-unfold"><a href="https://en.wikipedia.org/wiki/Magic_8_Ball" target=”_blank”><button class="button-54" role="button">About</button></a></div>
+                <div class="about">
+                                The Magic 8 Ball is a plastic sphere, made to look like an oversized eight ball, that is used for fortune-telling or seeking advice. 
+                                It was invented in 1946 by Albert C. Carter and Abe Bookman and is currently manufactured by Mattel. The user asks a yes–no question to the ball, 
+                                then turns it over to reveal an answer that floats up into a window. <i>~wikipedia</i>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+            <div class="wrap">
+                <img src="{% static 'magic/images/ball.png' %}" alt="ball" style="width: 60%;" class="animate__animated animate__wobble">
+                <div class="text-block">
+                    <p class="answer">{{answer}}</p>
+                </div>
+            </div>
+            <div id="footer">
+                    <p>Create by Kierznowski &copy; 2023</p>
+            </div>
+        </div>
+    </body>
+</html>
