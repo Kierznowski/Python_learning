@@ -4,7 +4,7 @@ def main():
     test_twttr()
 
 def test_twttr():
-        assert shorten("hej") == "hj"
+    assert shorten("hej") == "hj"
 
 
 
